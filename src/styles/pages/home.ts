@@ -1,17 +1,18 @@
-import { styled } from "..";
+import { FileX } from '@phosphor-icons/react'
+import { styled } from '..'
 
 export const HomeContainer = styled('main', {
   display: 'flex',
   width: '100%',
   maxWidth: 'calc(100vw - ((100vw - 1180px) / 2))',
   marginLeft: 'auto',
-  minHeight: 656
+  minHeight: 656,
 })
 
 export const Product = styled('div', {
   background: 'linear-gradient(180deg, #1ea483 0%, #7465d4 100%)',
   borderRadius: 8,
-  cursor: 'pointer',
+  cursor: 'not-allowed',
   position: 'relative',
   overflow: 'hidden',
 
@@ -20,7 +21,7 @@ export const Product = styled('div', {
   justifyContent: 'center',
 
   img: {
-    objectFit: 'cover'
+    objectFit: 'cover',
   },
 
   footer: {
@@ -42,22 +43,45 @@ export const Product = styled('div', {
     opacity: 0,
     transition: 'all 0.2s ease-in-out',
 
-    strong: {
-      fontSize: '$lg',
-      color: '$gray100'
+    div: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'flex-start',
+      justifyContent: 'space-between',
+
+      strong: {
+        fontSize: '$lg',
+        color: '$gray100',
+      },
+
+      span: {
+        fontSize: '$xl',
+        fontWeight: 'bold',
+        color: '$green300',
+      },
     },
 
-    span: {
-      fontSize: '$xl',
-      fontWeight: 'bold',
-      color: '$green300'
+    a: {
+      border: 0,
+      padding: 12,
+      borderRadius: 8,
+      display: 'flex',
+      color: '$gray100',
+      textAling: 'center',
+      alignItems: 'center',
+      background: '$green500',
+
+      '&:hover': {
+        color: '$white',
+        background: '$green300',
+      },
     },
   },
 
   '&:hover': {
     footer: {
       transform: 'translateY(0%)',
-      opacity: 1
-    }
-  }
+      opacity: 1,
+    },
+  },
 })

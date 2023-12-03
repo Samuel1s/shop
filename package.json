@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.0.15",
     "@rocketseat/eslint-config": "^2.1.0",
     "@stitches/react": "^1.2.8",
     "axios": "^1.6.2",
