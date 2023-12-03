@@ -52,16 +52,16 @@ export const NavContainer = styled('nav', {
     },
   },
 
-  '> button:last-child': {
-    fontSize: 16,
+  '> button': {
     marginTop: 30,
     backgroundColor: '$green500',
     border: 0,
     color: '$white',
     borderRadius: 8,
-    padding: '1.1rem',
+    padding: '1.1rem 3.3rem',
     cursor: 'pointer',
-    width: '100%',
+    fontWeight: 'bold',
+    fontSize: '$md',
 
     '&:disabled': {
       opacity: 0.6,

@@ -21,6 +21,7 @@ export const CartContext = createContext({} as CartContextType)
 
 interface CartContextProviderProps {
   children: ReactNode
+  title?: string
 }
 
 export function CartContextProvider({ children }: CartContextProviderProps) {

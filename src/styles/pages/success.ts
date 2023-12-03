@@ -55,6 +55,7 @@ export const ImageContainer = styled('div', {
   marginTop: '4rem',
   marginLeft: -24,
   border: '1px solid #7465d4',
+  zIndex: 100,
   borderRadius: '50%',
 
   display: 'flex',
